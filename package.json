@@ -4,7 +4,9 @@
   "description": "Projet 4 de la formation intégrateur web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "sass -w ./sass/main.scss assets/css/main.css",
+    "build" : "sass ./sass/main.scss assets/css/main.css"
   },
   "keywords": [],
   "author": "",
