@@ -1,0 +1,16 @@
+@import "./base/reset.scss";
+body {
+    background-color: #F6F6F6
+}
+
+p {
+    color: red
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+$red : red
