@@ -1,0 +1,23 @@
+.header__top {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.88rem;
+}
+
+.header__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.06rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: #353535;
+
+        .fa-shapfa-solidfa-location-dot {
+            color: #353535;
+        }
+
+            p {
+                color: #353535;
+            }
+}
+
