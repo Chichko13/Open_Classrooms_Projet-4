@@ -2,5 +2,22 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    background-color: #f6f6f6;
     padding-top: 2.44rem;
+    padding-bottom: 3.56rem;
+    /*
+        .section__top--text {
+            font-size: 1.125rem;
+        }
+        */
 }
+
+.section__top--text {
+    font-size: 1.125rem;
+    color: #353535;
+    padding-top: 1rem;
+    padding-bottom: 1.69rem;
+}
+
+/* POURQUOI TEXT N'EST PAS PRIS EN COMPTE ? */
