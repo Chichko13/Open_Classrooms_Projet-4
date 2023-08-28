@@ -4,17 +4,27 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #F6F6F6;
-}
-
-p {
-  color: red;
-}
-
-.logo {
+.header__top {
   display: flex;
   justify-content: center;
+  padding-top: 0.88rem;
+  padding-bottom: 0.81rem;
+}
+
+.header__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.06rem;
+  font-family: "Roboto", sans-serif;
+  background-color: #EAEAEA;
+  padding: 0.94rem 0;
+}
+.header__bottom .fa-shapfa-solidfa-location-dot {
+  color: #353535;
+}
+.header__bottom p {
+  color: #353535;
 }
 
 /*# sourceMappingURL=main.css.map */
