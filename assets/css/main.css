@@ -27,4 +27,11 @@
   color: #353535;
 }
 
+.section__top--flex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 2.44rem;
+}
+
 /*# sourceMappingURL=main.css.map */
