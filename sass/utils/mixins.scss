@@ -5,3 +5,21 @@
 @mixin radius-btn {
     border-radius: 1.56rem;
 }
+
+@mixin btn {
+    .btn {
+        width: 13.625rem;
+        height: 3.125rem;
+        border-radius: 1.5625rem;
+        box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.25);
+        background:linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+        color: white;
+        font-size: 1rem;
+    }
+}
+
+@mixin flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
