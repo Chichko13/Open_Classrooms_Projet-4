@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.38rem 1.56rem;
+    background-color: #353535;
+    color: white;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.44rem;
+    list-style: none;
+}
