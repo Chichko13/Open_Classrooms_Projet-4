@@ -7,7 +7,6 @@
 }
 
 @mixin btn {
-    .btn {
         width: 13.625rem;
         height: 3.125rem;
         border-radius: 1.5625rem;
@@ -16,7 +15,6 @@
         color: white;
         font-size: 1rem;
         border-style: none;
-    }
 }
 
 @mixin flexcenter {
