@@ -5,11 +5,17 @@
     padding: 1.38rem 1.56rem;
     background-color: #353535;
     color: white;
-}
-
-.footer__nav {
-    display: flex;
-    flex-direction: column;
-    gap: 0.44rem;
-    list-style: none;
+    &__img {
+        width: 5.59rem;
+        height: 1.68rem;
+        & > path {
+            fill: white;
+        }
+    }
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.44rem;
+        list-style: none;
+    }
 }

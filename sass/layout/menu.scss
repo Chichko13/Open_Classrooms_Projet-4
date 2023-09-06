@@ -1,0 +1,121 @@
+.main__restaurents {
+    background-color: #f6f6f6;
+    padding: 1.94rem 0.75rem 2.5rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    width: 100%;
+    position: relative;
+    top: -3.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: -3.4rem;
+}
+
+.restaurant__title {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.75rem;
+}
+
+.heart__title {
+    position: absolute;
+    right: 2.69rem;
+    top: 2.5rem;
+    z-index: 1;
+}
+
+.heart__title:checked {
+    fill: blue;
+}
+/*
+.heart__hover {
+    position: absolute;
+    right: 2.69rem;
+    top: 2.5rem;
+    transform: scale(0);
+}
+
+.heart__title:checked + .heart__hover {
+    display:inline;
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+.heart__title {
+    opacity: 1;
+}
+*/
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.menu__title {
+    font-weight: 300;
+    font-size: 1rem;
+}
+.menu__title::after {
+    content: '';
+    display: block;
+    width: 2.5rem;
+    height: 0.18rem;
+    background-color: #99e2d0 /*$cyan*/;
+}
+.menu__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.menu__card {
+    width: 100%;
+    height: 4.5rem;
+    background-color: white;
+    /*@include: radius-card; */
+    border-radius: 0.94rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.94rem;
+    box-shadow: 0 4px 15px 0 rgba(0,0,0,0.2);
+}
+.menu__card:hover{
+    width: 18.125rem;
+    height: 100%;
+    transition: all 3s;
+}
+.menu__card:hover{
+    width: 18.125rem;
+    height: 100%;
+    transition: all 3s;
+}
+.menu__space {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.94rem
+}
+
+.menu__space p:last-child {
+    color: #353535; /* $black-light*/
+}
+/* OUBLIE PAS CA */
+.test {
+    display: none;
+}
+.fa-solid.fa-check{
+    position: absolute;
+    left: 17rem;
+    top: 9rem;
+    width: 80px;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+.menu__card:hover + .test{
+    display: inline;
+}
+
+.flex__center {
+    display: flex;
+    justify-content: center;
+}

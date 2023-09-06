@@ -4,80 +4,66 @@
     gap: 1.13rem;
     background-color: #f6f6f6;
     padding: 3.38rem 1.25rem;
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 4.81rem;
+            padding-left: 0.81rem;
+            position: relative;
+            & p {
+                font-size: 1.06rem;
+                font-weight: 300;
+            }
+        }
 }
 
 .restaurants__card {
-    background-color: white;
-    border-radius: 0.93rem;
+        background-color: white;
+        @include radius-card;
+        position: relative;
+            & img{
+                width: 100%;
+                height: 10.87rem;
+                object-fit: cover;
+                border-radius: 0.93rem 0.93rem 0 0;
+            }
+            &--new {
+                @include card-new;
+                position: absolute;
+                right: 0.90rem;
+                top: 0.81rem;
+            }
+    }
+/*
+.heart {
+    position: absolute;
+    right: 1.56rem;
+    bottom: 2.06rem;
 }
-.restaurants__card a {
-    text-decoration: none;
-    color: black;
+.heart> path{
+    fill: none;
+    stroke: black;
 }
-.restaurants__card img {
-    width: 100%;
-    height: 10.87rem;
-    object-fit: cover;
-    border-radius: 0.93rem 0.93rem 0 0;
+.heart:hover > path {
+    fill: violet;
+    stroke: none;
+}
+*/
+
+.heart--checkbox {
+    display: none;
 }
 
-.restaurants__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 4.81rem;
-    padding-left: 0.81rem;
+.heart--svg {
+    position: absolute;
+    right: 1.56rem;
+    bottom: 2.06rem;
+    stroke: black;
+    cursor: pointer; /* pour avoir la main */
 }
 
-.restaurants__text p {
-    font-size: 1.06rem;
-    font-weight: 300;
-}
-
-.heart-1 {
-    position: absolute;
-    right: 2.69rem;
-    top: 71.4rem;
-}
-
-.heart-2 {
-    position: absolute;
-    right: 2.69rem;
-    top: 88.3rem;
-}
-.heart-3 {
-    position: absolute;
-    right: 2.69rem;
-    top: 105.4rem;
-}
-.heart-4 {
-    position: absolute;
-    right: 2.69rem;
-    top: 122.7rem;
-}
-
-.restaurants__card--new--one {
-    width: 5rem;
-    height: 1.81rem;
-    color: #008766;
-    background-color: #99E2D0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 1.87rem;
-    top: 60rem;
-}
-
-.restaurants__card--new-two {
-    width: 5rem;
-    height: 1.81rem;
-    color: #008766;
-    background-color: #99E2D0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 1.87rem;
-    top: 77rem;
+.heart--checkbox:checked + .heart--svg path {
+    fill: violet;
+    stroke: none;
 }

@@ -1,23 +1,33 @@
 .header__top {
-    display: flex;
-    justify-content: center;
+    @include flexcenter;
     padding-top: 0.88rem;
     padding-bottom: 0.81rem;
+    background-color: white;
 }
 
 .header__bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexcenter;
     gap: 1.06rem;
     background-color: #EAEAEA;
     padding: 0.94rem 0;
 
-        .fa-shap.fa-solidfa-location-dot {
-            color: #353535;
+    .fa-sharp.fa-solid.fa-location-dot {
+            color: $dark-grey;
+        /*LE P MARCHE PAS */
             p {
-                color: #353535;
+                color: $dark-grey;
         }
     }
 }
 
+.header__arrow {
+    position: absolute;
+    left: 1.06rem;
+    top: 1rem;
+}
+
+.banner{
+    width: 100%;
+    height: 17.18rem;
+    object-fit: cover;
+}
