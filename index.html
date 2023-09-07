@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
+    <div class="loader">
+        <div class="loader__test"></div>
+    </div>
     <header>
         <div class="header__top">
             <img src="assets/img/logo/ohmyfood@2x.svg" alt="logo du site ohmyfood">
@@ -23,12 +26,13 @@
     </header>
     <main>
         <section class="section__top">
-            <h1>Réservez le menu qui<br>vous convient</h1>
+            <h1>Réservez le menu qui<br> vous convient</h1>
             <p class="section__top--text">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
             <!--TYPE A AJOUTER-->
-            <button class="btn"><a href="#restaurants">Explorer nos restaurants</a></button>
+            <a href="#restaurants"><button class="btn">Explorer nos restaurants</button></a>
         </section>
         <section class="infos">
+        <div>
             <h1>Fonctionnement</h1>
             <div class="infos__flex">
                 <h2>
@@ -53,9 +57,12 @@
                     Dégustez au restaurant
                 </h2>
             </div>
+        </div>
         </section>
         <section class="restaurants">
+        <div class="restaurants__group">
             <h1 id="restaurants">Restaurants</h1>
+            <div class="restaurants__div">
             <article class="restaurants__card">
                 <a href="./restaurants/page1.html">
                 <img src="assets/img/restaurants/la_palette_du_goût.jpg" alt=""> <!--ALT A REMPLIR-->
@@ -88,6 +95,8 @@
                     </svg>
                 </label>
             </article>
+            </div>
+            <div class="restaurants__div">
             <article class="restaurants__card">
                 <a href="">
                 <img src="assets/img/restaurants/à_la_française.jpg" alt=""> <!--ALT A REMPLIR-->
@@ -118,6 +127,8 @@
                     </svg>
                 </label>
             </article>
+            </div>
+        </div>
         </section>
     </main>
     <footer class="footer">
@@ -146,7 +157,7 @@
                       Devenir partenaire
                 </li>
                 <li>Mentions légales</li>
-                <a href="mailto:nowhere@mozilla.org">Contact</a>
+                <li><a href="mailto:nowhere@mozilla.org">Contact</a></li>
             </ul>
         </nav>
     </footer>
