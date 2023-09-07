@@ -5,9 +5,10 @@
     padding: 1.38rem 1.56rem;
     background-color: #353535;
     color: white;
-    @include desktop {
+    @include tablet {
         flex-direction: row-reverse;
         align-items: flex-end;
+        padding: 1.88rem 1.38rem;
     }
     &__img {
         width: 5.59rem;
@@ -21,7 +22,7 @@
         flex-direction: column;
         gap: 0.44rem;
         list-style: none;
-        @include desktop {
+        @include tablet {
             flex-direction: row;
         }
     }

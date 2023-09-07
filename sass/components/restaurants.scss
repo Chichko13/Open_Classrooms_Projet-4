@@ -1,16 +1,17 @@
 .restaurants {
-    display: flex;
-    flex-direction: column;
     background-color: $light-grey;
-    padding: 3.38rem 1.25rem;
+    padding: 3.38rem 1.25rem 4.88rem;
     @include desktop {
         @include flexcenter;
+        padding: 1.88rem 0;
     }
         &__group {
             display: flex;
             flex-direction: column;
             gap: 1.12rem;
             @include desktop {
+                max-width: 1080px;
+                margin: auto;
                 flex-direction: column;
                 gap: 3.12rem;
             }
@@ -24,6 +25,7 @@
             position: relative;
             & h2 {
                 font-size: 1.125rem;
+
             }
             & p {
                 font-size: 1.06rem;

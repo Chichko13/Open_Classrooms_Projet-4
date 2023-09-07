@@ -6,6 +6,9 @@
     background-color: #f6f6f6;
     padding-top: 2.44rem;
     padding-bottom: 3.56rem;
+    @include tablet {
+        padding: 1.88rem 0;
+    }
         &--text {
             font-size: 1.125rem;
             color: #353535;

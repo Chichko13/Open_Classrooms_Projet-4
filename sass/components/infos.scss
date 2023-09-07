@@ -1,7 +1,12 @@
 .infos {
     padding : 3rem 1.25rem 4.25rem 2.03rem;
+    @include tablet {
+        padding: 3.12rem 1.25rem;
+    }
     @include desktop {
-        @include flexcenter
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 3.12rem 0;
     }
     &__flex {
         display: flex;
@@ -9,7 +14,8 @@
         gap: 1.56rem;
         padding-top: 1.62rem;
         @include tablet {
-            flex-direction: row
+            flex-direction: row;
+            gap: 2.28rem
         }
         &--circle {
             @include flexcenter;
@@ -36,4 +42,10 @@
     @include box-shadow;
     font-size: 1rem;
     position: relative;
+        @include tablet {
+        &:first-child {
+            margin-left: 12px;
+        }
+    }
 }
+

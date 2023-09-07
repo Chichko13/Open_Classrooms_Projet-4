@@ -22,7 +22,7 @@
     height: 3.125rem;
     border-radius: 1.5625rem;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    background: linear-gradient($gradient);
+    background: $gradient;
     color: white;
     font-size: 1rem;
     border-style: none;
@@ -58,13 +58,14 @@
 }
 
 @mixin desktop {
-    @media (min-width: 1440px){
+    @media (min-width: 1080px){
         @content;
     }
 }
 
 @mixin large-desktop {
-    @media (min-width: 1920px){
+    @media (min-width: 1440px){
         @content
     }   
 }
+
