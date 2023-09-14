@@ -71,35 +71,22 @@
                 top: 0.81rem;
             }
     }
-/*
+
 .heart {
     position: absolute;
     right: 1.56rem;
     bottom: 2.06rem;
-}
-.heart> path{
-    fill: none;
-    stroke: black;
-}
-.heart:hover > path {
-    fill: violet;
-    stroke: none;
-}
-*/
-
-.heart--checkbox {
-    display: none;
-}
-
-.heart--svg {
-    position: absolute;
-    right: 1.56rem;
-    bottom: 2.06rem;
-    stroke: black;
-    cursor: pointer; /* pour avoir la main */
-}
-
-.heart--checkbox:checked + .heart--svg path {
-    fill: violet;
-    stroke: none;
+            &--hover {
+                cursor: pointer;
+                position: absolute;
+                right: 1.56rem;
+                bottom: 2.06rem;
+                opacity: 0;
+                transition: opacity 400ms ease-in-out;
+                    &:hover {
+                        transform: scale(1);
+                        transition: opacity 400ms;
+                        opacity: 1;
+        }
+    }
 }
