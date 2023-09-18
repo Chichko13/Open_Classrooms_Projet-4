@@ -363,54 +363,33 @@ li:nth-child(2n+0) {
     width: 75%;
   }
 }
-.restaurant__title {
-  /*position: relative;*/
-  font-family: "Shrikhand", cursive;
-  font-size: 1.75rem;
+.restaurant__container {
+  display: flex;
+  position: relative;
+  gap: 1rem;
 }
 @media (min-width: 768px) {
-  .restaurant__title {
-    text-align: center;
+  .restaurant__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
-@media (min-width: 1080px) {
-  .restaurant__title {
-    margin: auto;
-  }
+.restaurant__title {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.75rem;
 }
 
 .heart__menu {
   position: absolute;
-  right: 2.69rem;
-  top: 2.5rem;
-}
-@media (min-width: 768px) {
-  .heart__menu {
-    right: 12.69rem;
-  }
-}
-@media (min-width: 1440px) {
-  .heart__menu {
-    right: 22.69rem;
-  }
+  top: 0.7rem;
 }
 .heart__menu--hover {
   cursor: pointer;
   position: absolute;
-  right: 2.69rem;
-  top: 2.5rem;
+  top: 0.7rem;
   opacity: 0;
   transition: opacity 400ms ease-in-out;
-}
-@media (min-width: 768px) {
-  .heart__menu--hover {
-    right: 12.69rem;
-  }
-}
-@media (min-width: 1440px) {
-  .heart__menu--hover {
-    right: 22.69rem;
-  }
 }
 .heart__menu--hover:hover {
   transition: opacity 400ms;

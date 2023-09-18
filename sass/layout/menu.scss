@@ -13,45 +13,31 @@
     @include desktop {
         width: 75%;
     }
+    &__container{
+        display: flex;
+        position: relative;
+        gap: 1rem;
+
+        @include tablet {
+            @include flexcenter;
+        }
+    }
     &__title{
-        /*position: relative;*/
         font-family: 'Shrikhand', cursive;
         font-size: 1.75rem;
-        @include tablet{
-            text-align: center;
         }
-        @include desktop {
-            margin: auto;
-        }
-        }
-        
-    
 }
 
 
 .heart__menu {
     position: absolute;
-    right: 2.69rem;
-    top: 2.5rem;
-    @include tablet {
-        right: 12.69rem;
-    }
-    @include large-desktop {
-        right: 22.69rem;
-    }
+    top: 0.7rem;
             &--hover {
                 cursor: pointer;
                 position: absolute;
-                right: 2.69rem;
-                top: 2.5rem;
+                top: 0.7rem;
                 opacity: 0;
                 transition: opacity 400ms ease-in-out;
-                @include tablet {
-                    right: 12.69rem;
-                }
-                @include large-desktop {
-                    right: 22.69rem;
-                }
                     &:hover {
                         transition: opacity 400ms;
                         opacity: 1;
