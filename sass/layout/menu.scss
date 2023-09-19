@@ -140,7 +140,6 @@
     background-color: $green;
     transform: translateX(100%);
     transition: opacity 400ms ease-out, transform 400ms ease-out;
-    outline: 1px solid $green;
 }
 .fa-check::before {
     background: white;
