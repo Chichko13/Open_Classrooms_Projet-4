@@ -345,7 +345,9 @@ li:nth-child(2n+0) {
 
 .restaurant {
   background-color: #f6f6f6;
-  padding: 1.94rem 0.75rem 2.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 1.94rem;
   border-radius: 2.5rem 2.5rem 0 0;
   position: relative;
   display: flex;
@@ -404,6 +406,7 @@ li:nth-child(2n+0) {
   flex-direction: column;
   gap: 2.5rem;
   overflow-x: hidden;
+  padding-bottom: 2.5rem;
 }
 .menu__title {
   font-weight: 300;
@@ -420,6 +423,7 @@ li:nth-child(2n+0) {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .menu__flex {
