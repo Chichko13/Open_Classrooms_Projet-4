@@ -13,19 +13,24 @@
     @include desktop {
         width: 75%;
     }
+
     &__container{
         display: flex;
         position: relative;
-        gap: 1rem;
+        gap: 2rem;
 
         @include tablet {
             @include flexcenter;
         }
     }
+    & .space{
+        gap: 5rem;
+    }
     &__title{
         font-family: 'Shrikhand', cursive;
         font-size: 1.75rem;
         }
+
 }
 
 
@@ -58,7 +63,7 @@
                 display: block;
                 width: 2.5rem;
                 height: 0.18rem;
-                background-color: $cyan;
+                background-color: $green;
             }
     }
         &__flex {
@@ -68,7 +73,7 @@
             @include tablet {
                 width: 70%;
                 margin: auto;
-            }   
+            }
         }
         &__card {
             width: 100%;
@@ -76,7 +81,7 @@
             background-color: white;
             @include radius-card; 
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             flex-direction: column;
             padding: 0.94rem;
             box-shadow: 0 4px 15px 0 rgba(0,0,0,0.1);
@@ -86,12 +91,18 @@
                     text-overflow: ellipsis;
                     overflow: hidden;
                 }
+                &:hover h3{
+                    width: 80%;
+                }
+                &:hover p{
+                    width: 73%;
+                }
                 &:hover .fa-solid.fa-check {
                     opacity: 1;
                     transform: translateX(0);
                     transition: opacity 400ms ease-out, transform 400ms ease-out;
                 }
-                &:hover .menu__space p:last-child{
+                &:hover .menu__space span{
                     transform: translateX(-55px);
                     transition: transform 400ms ease-out;
                 }
@@ -104,12 +115,12 @@
             display: flex;
             justify-content: space-between;
             font-size: 0.94rem;
-            & p:first-child {
+            & p {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
             }
-            & p:last-child {
+            & span {
                 font-weight: 700;
                 color: $dark-grey;
                 transition: transform 400ms ease-out;
@@ -131,7 +142,7 @@
     transition: opacity 400ms ease-out, transform 400ms ease-out;
     outline: 1px solid $green;
 }
-.fa-check::before { /* centre l'icone*/
+.fa-check::before {
     background: white;
     border-radius: 100%;
     color: $green;
@@ -141,6 +152,7 @@
     transform: rotate(0deg);
     transition: transform 400ms ease-out;
 }
+
 .center {
     margin: auto;
 }
@@ -160,6 +172,34 @@
 .delay4{
     animation: pop 1.8s ease 0s;
 }
+.delay5{
+    animation: pop 2s ease 0s;
+}
+.delay6{
+    animation: pop 2.2s ease 0s;
+}
+.delay7{
+    animation: pop 2.4s ease 0s;
+}
+.delay8{
+    animation: pop 2.6s ease 0s;
+}
+.delay9{
+    animation: pop 2.8s ease 0s;
+}
+.delay10{
+    animation: pop 3s ease 0s;
+}
+.delay11{
+    animation: pop 3.2s ease 0s;
+}
+.delay12{
+    animation: pop 3.4s ease 0s;
+}
+.delay13{
+    animation: pop 3.6s ease 0s;
+}
+
 @keyframes pop {
     0% {
         transform: scale(0);

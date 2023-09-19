@@ -3,6 +3,8 @@
     padding-top: 0.88rem;
     padding-bottom: 0.81rem;
     background-color: white;
+    position: relative;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .header__bottom {
@@ -11,12 +13,11 @@
     background-color: #EAEAEA;
     padding: 0.94rem 0;
 
-    .fa-sharp.fa-solid.fa-location-dot {
+    & .fa-sharp.fa-solid.fa-location-dot {
             color: $dark-grey;
-        /*LE P MARCHE PAS */
-            p {
-                color: $dark-grey;
-        }
+    }
+    & b {
+        color: $dark-grey;
     }
 }
 
