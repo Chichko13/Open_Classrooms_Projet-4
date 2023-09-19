@@ -5,12 +5,12 @@
 ```
 npm i sass
 ```
-### Commandes de dev
+## Commandes de dev
 Lancer la compilation sass live
 ```
 npm run dev
 ```
-#### Commande de prod
+## Commande de prod
 Compilation en une fois
 ```
 npm run build
