@@ -3,7 +3,6 @@
     height: 100%;
     position: fixed;
     background-color: grey;
-    opacity: 1;
     gap: 2rem;
     z-index: 99;
     @include flexcenter;
@@ -16,7 +15,7 @@
             background: $gradient;
             border-radius: 50%;
             animation: jump 1s ease-in-out infinite 100ms;
-            opacity: 1;
+
         }
         &__spin-2{
             height : 5rem;
@@ -48,6 +47,5 @@
   @keyframes stop {
     to {
         opacity: 0;
-        display: none;
     }
   }

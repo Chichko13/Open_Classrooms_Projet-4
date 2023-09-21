@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "sass -w ./sass/main.scss assets/css/main.css",
-    "build" : "sass ./sass/main.scss assets/css/main.css"
+    "dev": "sass -w ./sass/main.scss assets/css/main.css",
+    "build": "sass ./sass/main.scss assets/css/main.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "run": "^1.4.0",
     "sass": "^1.65.1"
   }
 }
