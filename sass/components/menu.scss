@@ -44,7 +44,7 @@
                 position: absolute;
                 top: 0.7rem;
                 opacity: 0;
-                transition: opacity 400ms ease-in-out;
+                transition: opacity $time ease-in-out;
                     &:hover {
                         opacity: 1;
         }
@@ -123,7 +123,7 @@
             & span {
                 font-weight: 700;
                 color: $dark-grey;
-                transition: transform 400ms ease-out;
+                transition: transform $time ease-out;
         }
     }
 }
@@ -139,7 +139,7 @@
     @include flexcenter;
     background-color: $green;
     transform: translateX(100%);
-    transition: opacity 400ms ease-out, transform 400ms ease-out;
+    transition: opacity $time ease-out, transform $time ease-out;
 }
 .fa-check::before {
     background: white;
@@ -149,7 +149,7 @@
     height: 1.5rem;
     @include flexcenter;
     transform: rotate(0deg);
-    transition: transform 400ms ease-out;
+    transition: transform $time ease-out;
 }
 
 .center {
@@ -157,46 +157,46 @@
 }
 
 .delay{
-    animation: pop 1s ease 0s;
+    animation: pop 1s ease;
 }
 .delay1{
-    animation: pop 1.2s ease 0s;
+    animation: pop 1.2s ease;
 }
 .delay2{
-    animation: pop 1.4s ease 0s;
+    animation: pop 1.4s ease;
 }
 .delay3{
-    animation: pop 1.6s ease 0s;
+    animation: pop 1.6s ease;
 }
 .delay4{
-    animation: pop 1.8s ease 0s;
+    animation: pop 1.8s ease;
 }
 .delay5{
-    animation: pop 2s ease 0s;
+    animation: pop 2s ease;
 }
 .delay6{
-    animation: pop 2.2s ease 0s;
+    animation: pop 2.2s ease;
 }
 .delay7{
-    animation: pop 2.4s ease 0s;
+    animation: pop 2.4s ease;
 }
 .delay8{
-    animation: pop 2.6s ease 0s;
+    animation: pop 2.6s ease;
 }
 .delay9{
-    animation: pop 2.8s ease 0s;
+    animation: pop 2.8s ease;
 }
 .delay10{
-    animation: pop 3s ease 0s;
+    animation: pop 3s ease;
 }
 .delay11{
-    animation: pop 3.2s ease 0s;
+    animation: pop 3.2s ease;
 }
 .delay12{
-    animation: pop 3.4s ease 0s;
+    animation: pop 3.4s ease;
 }
 .delay13{
-    animation: pop 3.6s ease 0s;
+    animation: pop 3.6s ease;
 }
 
 @keyframes pop {

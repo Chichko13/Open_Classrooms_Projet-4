@@ -81,7 +81,7 @@
                 right: 1.56rem;
                 bottom: 2.06rem;
                 opacity: 0;
-                transition: opacity 400ms ease-in-out;
+                transition: opacity $time ease-in-out;
                     &:hover {
                         opacity: 1;
         }
