@@ -1,10 +1,17 @@
 # Open_Classrooms_Projet-4
  Projet 4 OhMyFood
 
-## Installer sass - npm
+## Installation du projet
 ```
-#installation des dépendances :
 npm i sass
-#lancer sass :
+```
+## Commandes de dev
+Lancer la compilation sass live
+```
 npm run dev
+```
+## Commande de prod
+Compilation en une fois
+```
+npm run build
 ```
